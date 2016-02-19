@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="4" translatesAutoresizingMaskIntoConstraints="NO" text="Button is here -&gt;">
+                                <rect key="frame" x="10" y="50" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint id="11" firstAttribute="width" constant="130"/>
+                                    <constraint id="12" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="13" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="10" y="440" width="580" height="150"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="17" firstItem="13" firstAttribute="height" constant="150"/>
+                                </constraints>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="18" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Enter sentence">
+                                <rect key="frame" x="10" y="111" width="580" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="47" width="80" height="30"/>
+                                <state key="normal" title="Transport">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="25" firstItem="23" firstAttribute="width" constant="80"/>
+                                </constraints>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61">
+                                <rect key="frame" x="10" y="151" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Random Color On" lineBreakMode="tailTruncation" minimumFontSize="10" id="64" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="69" y="157" width="135.5" height="20.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="14" minValue="5" maxValue="22" id="73" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="142" y="395" width="254" height="31"/>
+                                <color key="maximumTrackTintColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                <color key="minimumTrackTintColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                                <color key="thumbTintColor" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                            </slider>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0" translatesAutoresizingMaskIntoConstraints="NO" id="85" misplaced="YES" progressViewStyle="bar">
+                                <rect key="frame" x="206" y="218" width="150" height="9"/>
+                            </progressView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="9" firstItem="4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10"/>
+                            <constraint id="10" firstItem="4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50"/>
+                            <constraint id="14" firstItem="13" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10"/>
+                            <constraint id="15" firstItem="wfy-db-euE" firstAttribute="top" secondItem="13" secondAttribute="bottom" constant="10"/>
+                            <constraint id="16" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="13" secondAttribute="trailing" constant="10"/>
+                            <constraint id="20" firstItem="18" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="40"/>
+                            <constraint id="21" firstItem="18" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10"/>
+                            <constraint id="22" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="10"/>
+                            <constraint id="24" firstItem="23" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="20"/>
+                            <constraint id="26" firstItem="18" firstAttribute="top" secondItem="23" secondAttribute="bottom" constant="34"/>
+                            <constraint id="62" firstItem="61" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10"/>
+                            <constraint id="63" firstItem="61" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="10"/>
+                            <constraint id="65" firstItem="64" firstAttribute="leading" secondItem="61" secondAttribute="trailing" constant="10"/>
+                            <constraint id="66" firstItem="64" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="16"/>
+                            <constraint id="74" firstItem="13" firstAttribute="top" secondItem="73" secondAttribute="bottom" constant="17"/>
+                            <constraint id="75" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="73" secondAttribute="trailing" constant="100"/>
+                            <constraint id="76" firstItem="73" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100"/>
+                            <constraint id="86" firstItem="85" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="87" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="85" secondAttribute="trailing"/>
+                            <constraint id="88" firstItem="85" firstAttribute="top" secondItem="61" secondAttribute="bottom" constant="36"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLabel" destination="4" id="name-outlet-4"/>
+                        <outlet property="textView" destination="13" id="name-outlet-13"/>
+                        <outlet property="textField" destination="18" id="name-outlet-18"/>
+                        <outlet property="button" destination="23" id="name-outlet-23"/>
+                        <outlet property="colorSwitch" destination="61" id="name-outlet-61"/>
+                        <outlet property="switchLabel" destination="64" id="name-outlet-64"/>
+                        <outlet property="textSizeSlider" destination="73" id="name-outlet-73"/>
+                        <outlet property="progressView" destination="85" id="name-outlet-85"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
